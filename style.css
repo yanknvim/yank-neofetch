@@ -35,6 +35,33 @@ a {
 	transform: translate(-50%, -50%);
 }
 
+.buttons {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 5px;
+}
+
+.close {
+	background: #FF6057;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.minimize {
+	background: #FFBD2E;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.full {
+	background: #27C93F;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
 .icon {
 	height: 128px;
 	width:  128px;

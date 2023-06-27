@@ -6,11 +6,16 @@
 }
 
 body {
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;	/* for Safari on iPhone */
+	width: 100vw;
 	background: #4c566a;
 	color: white;
 	font-family: 'Source Code Pro', monospace;
+	display: flex;
+	flex-direction: column;
+	place-content: space-between;
+	place-items: center start;
 }
 
 a {
@@ -19,6 +24,13 @@ a {
 
 p {
 	font-size: 20px;
+}
+
+.main {
+	flex-grow: 1;
+	display: grid;
+	place-items: center;
+	width: 100%;
 }
 
 .terminal-container {
@@ -32,11 +44,6 @@ p {
 	border-radius: 10px;
 
 	padding: 15px;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .buttons {
@@ -70,13 +77,6 @@ p {
 	height: 150px;
 	width:  150px;
 	border-radius: 100%;
-}
-
-.footer {
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	transform: translate(-50%, -50%);
 }
 
 .banners {
